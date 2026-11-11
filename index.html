@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BredoDev | تصميم وتطوير المواقع وتطبيقات أندرويد</title>
+  <meta name="description" content="BredoDev متخصص في تصميم المواقع وتطبيقات أندرويد بتجربة استخدام عصرية وأداء سريع." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-orb"></div>
+  </div>
+
+  <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a href="#hero" class="brand">
+        <span class="brand-mark brand-mark-bredo" aria-hidden="true">
+          <span class="logo-b">B</span>
+          <span class="logo-dot"></span>
+        </span>
+        <span class="brand-name">Bredo<strong>Dev</strong></span>
+      </a>
+
+      <nav class="nav" id="mainNav" aria-label="التنقل الرئيسي">
+        <a href="#services">الخدمات</a>
+        <a href="#process">طريقة العمل</a>
+        <a href="#work">المشاريع</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-outline nav-cta">ابدأ مشروعك</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="القائمة">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-2" aria-hidden="true"></div>
+      <div class="blob blob-3" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="badge" data-reveal>تصميم وتطوير احترافي</span>
+
+          <h1 class="hero-title">
+            <span class="line" data-reveal data-delay="100">أحوّل أفكارك إلى</span>
+            <span class="line accent" data-reveal data-delay="200">مواقع وتطبيقات أندرويد</span>
+            <span class="line" data-reveal data-delay="300">تفاعلية وسريعة</span>
+          </h1>
+
+          <p class="hero-sub" data-reveal data-delay="400">
+            أصمم واجهات عصرية متجاوبة، وأطوّر تطبيقات أندرويد وتطبيقات ويب تعمل بسلاسة على كل الأجهزة،
+            مع تجربة استخدام أنيقة وبنية جاهزة للتوسّع.
+          </p>
+
+          <div class="cta-group" data-reveal data-delay="500">
+            <a href="#work" class="btn btn-primary">شاهد أعمالي</a>
+            <a href="#contact" class="btn btn-outline">تواصل معي</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal data-delay="400">
+          <div class="device-stack" id="deviceStack">
+            <div class="browser-mock">
+              <div class="mock-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="mock-url">ezzeldienmohammed.github.io</span>
+              </div>
+              <div class="browser-body">
+                <div class="mock-nav"></div>
+                <div class="mock-hero">
+                  <div class="mock-block large"></div>
+                  <div class="mock-block small"></div>
+                </div>
+                <div class="mock-cards">
+                  <div class="mock-card"></div>
+                  <div class="mock-card"></div>
+                  <div class="mock-card"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="phone-mock">
+              <div class="mock-bar mobile-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="phone-screen">
+                <div class="phone-header"></div>
+                <div class="phone-list">
+                  <div class="phone-item"></div>
+                  <div class="phone-item"></div>
+                  <div class="phone-item"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="float-card card-code">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6 3 12l5 6"/><path d="M16 6l5 6-5 6"/></svg>
+              <span>تطوير</span>
+            </div>
+
+            <div class="float-card card-mobile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>
+              <span>تطبيقات</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#services" aria-label="تابع التمرير">
+        <span class="scroll-track"><span class="scroll-thumb"></span></span>
+        <span class="scroll-text">تابع التمرير</span>
+      </a>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal>الخدمات</span>
+          <h2 data-reveal data-delay="100">حلول كاملة من الفكرة إلى الإطلاق</h2>
+          <p data-reveal data-delay="200">
+            أعمل معك خطوة بخطوة لأحوّل الفكرة إلى منتج رقمي واضح، سريع وجذاب.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card" data-reveal>
+            <span class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="13" rx="2"/><path d="M8.5 20.5h7"/><path d="M12 17v3.5"/></svg>
+            </span>
+            <h3>تطوير المواقع</h3>
+            <p>
+              مواقع سريعة ومتوافقة مع محركات البحث، بتجربة استخدام أنيقة وهيكل جاهز للتوسّع.
+            </p>
+            <ul class="service-tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>SEO</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-reveal data-delay="100">
+            <span class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>
+            </span>
+            <h3>تطبيقات أندرويد</h3>
+            <p>
+              تطبيقات أندرويد سريعة بواجهات تفاعلية وأداء عالٍ، من الفكرة إلى النشر على Google Play،
+              وأعمال أيضاً عبر تطبيقات ويب متجاوبة.
+            </p>
+            <ul class="service-tags">
+              <li>Android</li>
+              <li>UI Motion</li>
+              <li>API</li>
+              <li>Push</li>
+              <li>Cloud</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-reveal data-delay="200">
+            <span class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 7.5v9L12 21l8-4.5v-9L12 3z"/><path d="M4 7.5 12 12l8-4.5"/><path d="M12 12v9"/></svg>
+            </span>
+            <h3>واجهات وتجربة المستخدم</h3>
+            <p>
+              تصميم UX/UI يركز على سهولة الاستخدام وتحويل الزائر إلى عميل، مع أنظمة تصميم متكاملة.
+            </p>
+            <ul class="service-tags">
+              <li>Figma</li>
+              <li>Design System</li>
+              <li>Accessibility</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-reveal data-delay="300">
+            <span class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 8h13l-1.2 11.2a2 2 0 0 1-2 1.8H8.7a2 2 0 0 1-2-1.8L5.5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+            </span>
+            <h3>متاجر إلكترونية</h3>
+            <p>
+              متاجر جاهزة للبيع مع دفع آمن ولوحة تحكم سهلة وتقارير تسويقية واضحة.
+            </p>
+            <ul class="service-tags">
+              <li>Payment</li>
+              <li>Analytics</li>
+              <li>Dashboard</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal>طريقة العمل</span>
+          <h2 data-reveal data-delay="100">خطوات واضحة وبدون مفاجآت</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item" data-reveal>
+            <span class="timeline-num">01</span>
+            <div>
+              <h3>اكتشاف الفكرة</h3>
+              <p>نفهم الجمهور المستهدف والأهداف ونحدد نطاق المشروع بدقة.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal data-delay="100">
+            <span class="timeline-num">02</span>
+            <div>
+              <h3>تخطيط وتصميم</h3>
+              <p>نبني الهيكل ثم نجرّب التصميم على الشاشات قبل كتابة الكود.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal data-delay="200">
+            <span class="timeline-num">03</span>
+            <div>
+              <h3>تطوير وبرمجة</h3>
+              <p>تنفيذ نظيف ومتجاوب مع مراجعات دورية ونتائج قابلة للتشغيل.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal data-delay="300">
+            <span class="timeline-num">04</span>
+            <div>
+              <h3>اختبار وإطلاق</h3>
+              <p>اختبار الأداء والتوافق ثم النشر على السيرفر أو المتجر.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal data-delay="400">
+            <span class="timeline-num">05</span>
+            <div>
+              <h3>متابعة وتحسين</h3>
+              <p>مراقبة الأخطاء وتحسين السرعة وإضافة الميزات الجديدة عند الحاجة.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal>أعمالي</span>
+          <h2 data-reveal data-delay="100">نظرة سريعة على نماذج حديثة</h2>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card" data-reveal>
+            <div class="work-thumb web">
+              <span class="work-tag">ويب ستور</span>
+              <div class="mini-screen">
+                <div class="mini-top"></div>
+                <div class="mini-body">
+                  <div class="mini-block big"></div>
+                  <div class="mini-block"></div>
+                  <div class="mini-block"></div>
+                </div>
+              </div>
+            </div>
+            <div class="work-body">
+              <h3>متجر أزياء عصري</h3>
+              <p>تجربة شراء سريعة مع تصفية منتجات وذكاء في التوصيات.</p>
+            </div>
+          </article>
+
+          <article class="work-card" data-reveal data-delay="100">
+            <div class="work-thumb app">
+              <span class="work-tag">تطبيق</span>
+              <div class="mini-phone">
+                <div class="mini-notch"></div>
+                <div class="mini-list">
+                  <div class="mini-row"></div>
+                  <div class="mini-row"></div>
+                  <div class="mini-row"></div>
+                </div>
+              </div>
+            </div>
+            <div class="work-body">
+              <h3>تطبيق متابعة اللياقة</h3>
+              <p>خطط تمرين وتغذية مع إشعارات ذكية ولوحة تقدّم يومية.</p>
+            </div>
+          </article>
+
+          <article class="work-card" data-reveal data-delay="200">
+            <div class="work-thumb dashboard">
+              <span class="work-tag">لوحة تحكم</span>
+              <div class="mini-screen">
+                <div class="mini-side"></div>
+                <div class="mini-body">
+                  <div class="mini-chart">
+                    <span style="height:35%"></span>
+                    <span style="height:65%"></span>
+                    <span style="height:45%"></span>
+                    <span style="height:85%"></span>
+                    <span style="height:55%"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work-body">
+              <h3>منصة تحليلات</h3>
+              <p>تقارير فورية عن الأداء والمبيعات برسوم بيانية واضحة.</p>
+            </div>
+          </article>
+
+          <article class="work-card" data-reveal data-delay="300">
+            <div class="work-thumb landing">
+              <span class="work-tag">صفحة هبوط</span>
+              <div class="mini-screen">
+                <div class="mini-hero-block"></div>
+                <div class="mini-body">
+                  <div class="mini-block big"></div>
+                  <div class="mini-block"></div>
+                  <div class="mini-block"></div>
+                </div>
+              </div>
+            </div>
+            <div class="work-body">
+              <h3>منصة تعليمية</h3>
+              <p>صفحة هبوط سريعة مع نظام حجز دورات ولوحة للمدرّب.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-strip section" id="start">
+      <div class="container">
+        <div class="cta-card" data-reveal>
+          <h2>جاهز نحوّل المشروع القادم إلى واقع؟</h2>
+          <p>أرسل التفاصيل وستحصل على خطة أولية وخطوات تنفيذ واضحة.</p>
+          <a href="#contact" class="btn btn-light">ابدأ الآن</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy" data-reveal>
+          <span class="eyebrow">تواصل</span>
+          <h2>خلي فكرتك تبقي حقيقة</h2>
+          <p>اكتب رسالة قصيرة وصف فيها نوع المشروع والوقت المتوقع، وسأتواصل معك بأفكار أولية.</p>
+
+          <ul class="contact-info">
+            <li>
+              <span class="contact-label">البريد</span>
+              <a class="contact-value" href="mailto:brbredobordon@gmail.com">brbredobordon@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-label">واتساب</span>
+              <a class="contact-value" href="https://wa.me/96872620269" target="_blank" rel="noopener noreferrer">+968 72620269</a>
+            </li>
+            <li>
+              <span class="contact-label">هاتف</span>
+              <a class="contact-value" href="tel:+201026206911">+201026206911</a>
+            </li>
+            <li>
+              <span class="contact-label">GitHub</span>
+              <a class="contact-value" href="https://github.com/EzzeldienMohammed" target="_blank" rel="noopener noreferrer">github.com/EzzeldienMohammed</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm" data-reveal data-delay="150" novalidate>
+          <label class="field">
+            <input type="text" name="name" placeholder=" " required />
+            <span>الاسم</span>
+          </label>
+          <label class="field">
+            <input type="email" name="email" placeholder=" " required />
+            <span>البريد الإلكتروني</span>
+          </label>
+          <label class="field">
+            <input type="text" name="subject" placeholder=" " />
+            <span>نوع المشروع</span>
+          </label>
+          <label class="field">
+            <textarea name="message" rows="4" placeholder=" " required></textarea>
+            <span>تفاصيل المشروع</span>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block">إرسال الرسالة</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-brand">
+        <span class="brand-mark brand-mark-bredo small" aria-hidden="true">
+          <span class="logo-b">B</span>
+          <span class="logo-dot"></span>
+        </span>
+        <span>Bredo<strong>Dev</strong></span>
+      </div>
+
+      <nav class="footer-nav" aria-label="روابط الفوتر">
+        <a href="#services">الخدمات</a>
+        <a href="#process">طريقة العمل</a>
+        <a href="#work">المشاريع</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+
+      <p class="footer-note">© <span id="year">2026</span> جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
