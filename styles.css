@@ -1293,6 +1293,107 @@ a.contact-value:hover {
   font-size: 0.86rem;
 }
 
+/* ---------- About ---------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: center;
+  gap: clamp(36px, 6vw, 72px);
+}
+
+.about-visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.about-avatar {
+  width: min(300px, 70vw);
+  aspect-ratio: 1;
+  border-radius: 36% 64% 58% 42% / 42% 38% 62% 58%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: linear-gradient(140deg, var(--purple-500), var(--purple-800));
+  box-shadow: var(--shadow-lg);
+}
+
+.about-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-initial {
+  font-size: clamp(5rem, 14vw, 8rem);
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1;
+}
+
+.about-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--purple-800);
+}
+
+.about-badge::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #22C55E;
+  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.18);
+}
+
+.about-copy h2 {
+  font-size: clamp(1.6rem, 3.4vw, 2.3rem);
+}
+
+.about-stats {
+  list-style: none;
+  margin: 8px 0 22px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.about-stats li {
+  padding: 16px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.about-stats strong {
+  display: block;
+  font-size: 1.35rem;
+  color: var(--purple-700);
+  line-height: 1.3;
+}
+
+.about-stats span {
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.about-tools {
+  margin-bottom: 26px;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1080px) {
   .services-grid,
@@ -1312,8 +1413,17 @@ a.contact-value:hover {
 
 @media (max-width: 980px) {
   .hero-grid,
-  .contact-grid {
+  .contact-grid,
+  .about-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-copy {
+    text-align: center;
+  }
+
+  .about-tools {
+    justify-content: center;
   }
 
   .hero-visual {
@@ -1407,6 +1517,14 @@ a.contact-value:hover {
   .cta-group {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-stats li:last-child {
+    grid-column: 1 / -1;
   }
 
   .footer-wrap {
